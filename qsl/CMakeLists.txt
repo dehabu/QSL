@@ -4,6 +4,10 @@
 PROJECT(QSL)
 cmake_minimum_required(VERSION 2.8)
 
+ADD_DEFINITIONS(-DQVMATRIXALGEBRA_AVAILABLE=1
+		-DGSL_AVAILABLE=1
+)
+
 SET(qsl_sources_cpp
 	qvbitcount.cpp        
 	qvcomplex.cpp
@@ -49,5 +53,5 @@ ENDIF (WIN32 OR APPLE)
 
 
 INSTALL (TARGETS qsl DESTINATION ${LIBRARY_OUTPUT_DIRECTORY})
-#INSTALL (FILES ${qsl_sources_hpp} DESTINATION include)
+INSTALL (FILES ${qsl_sources_hpp} DESTINATION include)
 

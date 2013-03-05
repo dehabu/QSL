@@ -571,10 +571,10 @@ class QVMatrix
                 /// @warning This method requires compatibility with the GSL library.
                 /// @param B vector for the right hand side (input).
                 /// @param X vector with the solution (output).
-                #ifdef BLAS_AVAILABLE
+                //#ifdef BLAS_AVAILABLE
                 void triangularSolve(const QVMatrix &B, QVMatrix &X, bool transposed = false,
                                      bool unit_diagonal = false, bool left = true) const;
-                #endif
+                //#endif
 
         /// @brief Computes the inverse of the matrix.
                 /// @warning This method requires compatibility with the GSL library.

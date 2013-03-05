@@ -72,6 +72,7 @@
 
 /// @brief Available methods for Singular Value Decomposition (SVD)
 /// @ingroup qvmatrixalgebra
+
 typedef enum {
     GSL_THIN_DECOMP_MOD,    /*!< GSL Golub-Reinsch modified algorithm (thin); faster for M >> N. */
     GSL_THIN_DECOMP,        /*!< GSL Golub-Reinsch default algorithm (thin) */

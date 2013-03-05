@@ -389,6 +389,7 @@ void QVMatrix::triangularSolve(const QVVector &b, QVVector &x, bool transposed, 
 
 }
 
+
 void QVMatrix::triangularSolve(const QVMatrix &B, QVMatrix &X, bool transposed, bool unit_diagonal, bool left) const
 {
     X = B;
